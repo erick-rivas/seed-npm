@@ -1,0 +1,11 @@
+{
+  "name": "seed_builder",
+  "version": "1.0.0",
+  "description": "Seed builder",
+  "main": "index.js",
+  "author": "Erick Rivas",
+  "license": "MIT",
+  "bin": {
+    "seed-builder": "./cli.js"
+  }
+}

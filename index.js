@@ -8,9 +8,6 @@ exports.build = function (input, platform, output) {
 exports.export = function (input, modulee, output) {
   const exec = require("child_process").execSync;
   let dir = __dirname.replace(/ /g, "\\ ");
-  let command = `${dir}/bin/seed export
-    ${input ? "-i " + input : ""}
-    ${modulee ? "-m " + modulee : ""}
-    ${output ? "-o " + output : ""} `
+  let command = `${dir}/bin/seed export ${input ? "-i " + input : ""} ${modulee ? "-m " + modulee : ""} ${output ? "-o " + output : ""} `
   return exec(command).toString();
 }

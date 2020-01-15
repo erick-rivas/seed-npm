@@ -1,6 +1,6 @@
 {
   "name": "seed-builder",
-  "version": "0.1.88",
+  "version": "0.1.9",
   "description": "Seed builder",
   "main": "index.js",
   "author": "Erick Rivas",

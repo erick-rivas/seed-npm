@@ -1,28 +1,33 @@
 # Seed builder
 
-This repository holds the source code of the **seed project builder** for the development of a **Django api & React web** .
+This repository holds the source code of the **seed builder** for the generation of a **Django api & React web** .
 
 ## Installation:
 
 For the latest stable version:
 
 ```bash
-$ npm install -g seed-builder
+npm install -g seed-builder
 ```
 
 ## Examples
 
--  Build project
+-  Build a project
 ```bash
-$ seed-builder build -i SeedManifest.json
+seed-builder
 ```
 
--  Export modules
+-  Build a project with specific params
 ```bash
-$ seed-builder export -i SeedManifest.json -m views:__all__
+seed-builder build -i ./settings/SeedManifest.json
+```
+
+-  Export modules (override)
+```bash
+seed-builder export -i SeedManifest.json -m views:__all__
 ```
 
 -  Show help
 ```bash
-$ seed-builder -h
+seed-builder -h
 ```

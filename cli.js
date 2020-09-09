@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 const exec = require("child_process").execSync;
-let dir = __dirname.replace(/ /g, "\\ ");
+const idx = require("./index.js");
 const [, , ...args] = process.argv
-let command = `${dir}/bin/seed ${args.join(" ")}`
+const command = `${idx.getBin()} ${args.join(" ")}`
 console.log(exec(command).toString())

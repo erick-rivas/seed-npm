@@ -51,9 +51,9 @@ In case of require scaffolding for ease file generation, use *seed-builder scaff
 
 -   To scaffolding a new reactjs component
 ```bash
-seed-builder scaffolding -m components:nav/navbar
+seed-builder scaffolding -m nav/navbar
 ``` 
->  It will create a scaffold with components/nav/Navbar.js, views/nav/Navbar.js and views/nav/Navbar.scss files
+>  It will create a scaffold with components/nav/Navbar.js, views/nav/Navbar.js
 
 ## References
 

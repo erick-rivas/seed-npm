@@ -5,7 +5,11 @@ exports.getBin = function getBin(){
   const dir = __dirname.replace(/ /g, "\\ ");
   const platform = os.platform();
   switch(platform){
-    case "linux": return path.join(dir, "bin", "seed-linux")
+    case "linux":
+      const exec = require("child_process").execSync;
+	    const linuxPath = path.join(dir, "bin", "seed-linux")
+		  exec(`chmod +x ${linuxPath}`)
+		  return linuxPath
     case "win32": return path.join(dir, "bin", "seed-windows.exe")
   }
   return path.join(dir, "bin", "seed-linux")

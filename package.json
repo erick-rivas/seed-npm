@@ -1,6 +1,6 @@
 {
   "name": "seed-builder",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "Code generator library",
   "main": "index.js",
   "author": "Erick Rivas",
